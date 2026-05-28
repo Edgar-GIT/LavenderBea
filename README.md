@@ -37,32 +37,6 @@ src/
 ├── js/               # Scripts do cliente
 └── sql/              # Scripts do banco de dados
 ```
-
-## Instalação
-
-1. Clone o repositório
-2. Configure as variáveis de ambiente (veja `src/php/core/config.php`)
-3. Crie o banco de dados executando `src/sql/lavender_bea.sql`
-4. Acesse a aplicação através do navegador
-
-### Variáveis de Ambiente
-
-```
-LAVENDER_DB_HOST=localhost
-LAVENDER_DB_PORT=3306
-LAVENDER_DB_NAME=lavender_bea
-LAVENDER_DB_USER=root
-LAVENDER_DB_PASS=root
-LAVENDER_STORAGE_PATH=/path/to/uploads
-```
-
-## Credenciais Padrão
-
-- **Usuário Admin**: admin
-- **Senha Admin**: edgarL123#
-
-⚠️ **Nota**: Mude a senha do administrador em produção!
-
 ## Documentação
 
 - Veja [modelo ER](./modelo_er/lavender_bea_er.drawio) para a estrutura do banco de dados
