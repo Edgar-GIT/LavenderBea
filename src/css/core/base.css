@@ -1,0 +1,73 @@
+/*base da pagina*/
+
+:root {
+  --color-bg-dark: #241611;
+  --color-primary: #9F775B;
+  --color-primary-soft: #9C7961;
+  --color-accent: #521D20;
+  --color-accent-soft: #63333A;
+  --color-muted: #4B4A38;
+  --color-surface: #DFD0B9;
+  --color-surface-soft: #D5BCAD;
+  --color-cream: #FFEDDA;
+  --color-danger: #401216;
+
+  --radius-lg: 24px;
+  --radius-md: 16px;
+  --radius-pill: 999px;
+
+  --shadow-soft: 0 18px 45px rgba(0, 0, 0, 0.35);
+  --shadow-subtle: 0 8px 22px rgba(0, 0, 0, 0.25);
+
+  --nav-height: 88px;
+}
+
+*,*::before,*::after { /*selector global*/
+  box-sizing: border-box;
+}
+
+html,body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Poppins", "Inter", sans-serif;
+  color: var(--color-cream);
+  background: radial-gradient(circle at top, #521D20 0, #241611 45%, #000 100%);
+  min-height: 100%;
+}
+
+body {
+  background-attachment: fixed;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+}
+
+/*Layout*/
+
+.page-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content {
+  flex: 1;
+  padding-top: var(--nav-height);
+}
+
+.container {
+  width: min(1120px, 100% - 32px);
+  margin-inline: auto;
+}
+

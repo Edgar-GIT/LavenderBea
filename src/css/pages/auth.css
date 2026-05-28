@@ -1,0 +1,37 @@
+/*auth*/
+
+.auth-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 3fr);
+  gap: 24px;
+}
+
+.auth-panel {
+  border-radius: 24px;
+  padding: 20px 18px 18px;
+  background: rgba(11, 7, 6, 0.96);
+  border: 1px solid rgba(223, 208, 185, 0.6);
+  box-shadow: var(--shadow-soft);
+}
+
+.auth-panel-secondary {
+  background: radial-gradient(circle at 0 0, rgba(223, 208, 185, 0.2), transparent 65%),rgba(24, 15, 11, 0.96);
+}
+
+.auth-reset-row {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.auth-reset-link {
+  display: inline-block;
+  font-size: 0.72rem;
+  color: rgba(255, 237, 218, 0.72);
+  letter-spacing: 0.08em;
+}
+
+.auth-reset-link:hover {
+  color: #FFEDDA;
+  text-decoration: underline;
+}
+

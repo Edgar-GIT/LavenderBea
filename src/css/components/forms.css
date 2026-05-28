@@ -1,0 +1,71 @@
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+
+.field-label {
+  font-size: 0.76rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 237, 218, 0.7);
+}
+
+.field-input,.field-textarea,.field-select {
+  width: 100%;
+  border-radius: 999px;
+  border: 1px solid rgba(223, 208, 185, 0.5);
+  padding: 8px 12px;
+  background: rgba(20, 12, 9, 0.85);
+  color: #FFEDDA;
+  font-size: 0.8rem;
+  outline: none;
+}
+
+.field-textarea {
+  border-radius: 18px;
+  min-height: 90px;
+  resize: vertical;
+}
+
+.field-input::placeholder,.field-textarea::placeholder {
+  color: rgba(255, 237, 218, 0.55);
+}
+
+.field-hint {
+  font-size: 0.7rem;
+  color: rgba(255, 237, 218, 0.6);
+}
+
+.products-fav-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  color: rgba(255, 237, 218, 0.8);
+}
+
+.products-fav-toggle input {
+  accent-color: #9F775B;
+}
+
+/* validacoes no cliente */
+.field-error .field-input,
+.field-error .field-textarea {
+  border-color: #d97e70;
+  background: rgba(217, 126, 112, 0.1);
+}
+
+.field-error .field-input:focus,
+.field-error .field-textarea:focus {
+  border-color: #d97e70;
+  box-shadow: 0 0 0 2px rgba(217, 126, 112, 0.2);
+}
+
+.field-error-message {
+  font-size: 0.7rem;
+  color: #d97e70;
+  margin-top: 2px;
+  font-weight: 500;
+}

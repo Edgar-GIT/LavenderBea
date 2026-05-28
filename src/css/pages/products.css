@@ -1,0 +1,58 @@
+/*listing e favoritos*/
+
+.products-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.products-search {
+  position: relative;
+  flex: 1;
+  min-width: 260px;
+}
+
+.products-toolbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding-top: 2px;
+}
+
+.products-filter {
+  min-width: 180px;
+  margin-top: 4px;
+  margin-bottom: 6px;
+}
+
+.products-filter-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.products-filter-chip {
+  border-radius: 999px;
+  padding: 4px 10px;
+  border: 1px solid rgba(223, 208, 185, 0.6);
+  background: rgba(24, 15, 11, 0.96);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: rgba(255, 237, 218, 0.8);
+  cursor: pointer;
+}
+
+.products-filter-chip.is-active {
+  background: linear-gradient(120deg, #9F775B, #D5BCAD);
+  color: #241611;
+}
+
+.products-search .nav-search-results {
+  top: calc(100% + 12px);
+}
+

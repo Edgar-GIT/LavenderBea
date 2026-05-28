@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2600" height="1600" viewBox="0 0 2600 1600">
+  <defs>
+    <style>
+      .bg { fill: #0d0d0d; }
+      .line { stroke: #ffffff; stroke-width: 2.2; fill: none; }
+      .thin { stroke: #ffffff; stroke-width: 1.5; fill: none; }
+      .entity { fill: #101010; stroke: #ffffff; stroke-width: 2; }
+      .rel { fill: #101010; stroke: #ffffff; stroke-width: 2; }
+      .attr { fill: #101010; stroke: #ffffff; stroke-width: 1.5; }
+      .txt { fill: #ffffff; font-family: Arial, sans-serif; font-size: 14px; text-anchor: middle; dominant-baseline: middle; }
+      .entityTxt { fill: #ffffff; font-family: Arial, sans-serif; font-size: 21px; font-weight: 700; text-anchor: middle; dominant-baseline: middle; }
+      .relTxt { fill: #ffffff; font-family: Arial, sans-serif; font-size: 15px; font-weight: 700; text-anchor: middle; dominant-baseline: middle; }
+      .card { fill: #9ee7ff; font-family: Arial, sans-serif; font-size: 15px; font-weight: 700; text-anchor: middle; dominant-baseline: middle; }
+      .pk { text-decoration: underline; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="2600" height="1600"/>
+
+  <!-- relacoes entre entidades -->
+  <line class="line" x1="330" y1="729" x2="455" y2="729"/>
+  <line class="line" x1="575" y1="729" x2="780" y2="729"/>
+  <polyline class="line" points="990,714 1045,714 1045,404 1050,404"/>
+  <polyline class="line" points="1160,404 1190,404 1190,289 1220,289"/>
+  <polyline class="line" points="2030,714 1700,714 1700,404 1640,404"/>
+  <polyline class="line" points="1530,404 1450,404 1450,289 1420,289"/>
+  <polyline class="line" points="990,744 1045,744 1045,1054 1050,1054"/>
+  <polyline class="line" points="1160,1054 1180,1054 1180,1169 1195,1169"/>
+  <polyline class="line" points="2030,744 1700,744 1700,1054 1640,1054"/>
+  <polyline class="line" points="1530,1054 1470,1054 1470,1169 1445,1169"/>
+
+  <!-- ligacoes dos atributos -->
+  <line class="thin" x1="235" y1="641" x2="240" y2="700"/>
+  <line class="thin" x1="120" y1="729" x2="150" y2="729"/>
+  <line class="thin" x1="235" y1="825" x2="240" y2="758"/>
+
+  <line class="thin" x1="812" y1="566" x2="830" y2="700"/>
+  <line class="thin" x1="970" y1="564" x2="940" y2="700"/>
+  <line class="thin" x1="745" y1="662" x2="780" y2="716"/>
+  <line class="thin" x1="710" y1="827" x2="810" y2="758"/>
+  <line class="thin" x1="865" y1="910" x2="870" y2="758"/>
+  <line class="thin" x1="605" y1="902" x2="825" y2="758"/>
+  <line class="thin" x1="715" y1="1002" x2="860" y2="758"/>
+  <line class="thin" x1="620" y1="522" x2="805" y2="700"/>
+  <line class="thin" x1="752" y1="544" x2="800" y2="700"/>
+  <line class="thin" x1="945" y1="1010" x2="885" y2="758"/>
+
+  <line class="thin" x1="2108" y1="581" x2="2145" y2="700"/>
+  <line class="thin" x1="2030" y1="587" x2="2030" y2="716"/>
+  <line class="thin" x1="2200" y1="587" x2="2225" y2="700"/>
+  <line class="thin" x1="2310" y1="597" x2="2270" y2="710"/>
+  <line class="thin" x1="2335" y1="662" x2="2270" y2="710"/>
+  <line class="thin" x1="2350" y1="777" x2="2270" y2="742"/>
+  <line class="thin" x1="2008" y1="895" x2="2080" y2="758"/>
+  <line class="thin" x1="2152" y1="910" x2="2150" y2="758"/>
+  <line class="thin" x1="2340" y1="897" x2="2270" y2="758"/>
+  <line class="thin" x1="2305" y1="990" x2="2220" y2="758"/>
+
+  <line class="thin" x1="1238" y1="191" x2="1280" y2="260"/>
+  <line class="thin" x1="1430" y1="189" x2="1370" y2="260"/>
+  <line class="thin" x1="1180" y1="277" x2="1220" y2="289"/>
+  <line class="thin" x1="1465" y1="277" x2="1420" y2="289"/>
+
+  <line class="thin" x1="1318" y1="1260" x2="1320" y2="1198"/>
+  <line class="thin" x1="1318" y1="1079" x2="1320" y2="1140"/>
+  <line class="thin" x1="1130" y1="1262" x2="1195" y2="1190"/>
+  <line class="thin" x1="1500" y1="1262" x2="1445" y2="1190"/>
+  <line class="thin" x1="1190" y1="1355" x2="1245" y2="1198"/>
+  <line class="thin" x1="1440" y1="1355" x2="1390" y2="1198"/>
+
+  <line class="thin" x1="2248" y1="1191" x2="2255" y2="1260"/>
+  <line class="thin" x1="2090" y1="1267" x2="2150" y2="1285"/>
+  <line class="thin" x1="2420" y1="1267" x2="2360" y2="1285"/>
+  <line class="thin" x1="2110" y1="1392" x2="2150" y2="1318"/>
+  <line class="thin" x1="2415" y1="1392" x2="2360" y2="1318"/>
+  <line class="thin" x1="2215" y1="1460" x2="2255" y2="1318"/>
+  <line class="thin" x1="2325" y1="1460" x2="2300" y2="1318"/>
+
+  <!-- entidades -->
+  <rect class="entity" x="150" y="700" width="180" height="58"/>
+  <text class="entityTxt" x="240" y="729">Categorias</text>
+  <rect class="entity" x="780" y="700" width="210" height="58"/>
+  <text class="entityTxt" x="885" y="729">Produtos</text>
+  <rect class="entity" x="2030" y="700" width="240" height="58"/>
+  <text class="entityTxt" x="2150" y="729">Utilizadores</text>
+  <rect class="entity" x="1220" y="260" width="200" height="58"/>
+  <text class="entityTxt" x="1320" y="289">Favoritos</text>
+  <rect class="entity" x="1195" y="1140" width="250" height="58"/>
+  <text class="entityTxt" x="1320" y="1169">Carrinho_Itens</text>
+  <rect class="entity" x="2150" y="1260" width="210" height="58"/>
+  <text class="entityTxt" x="2255" y="1289">Logs_Admin</text>
+
+  <!-- relacoes -->
+  <polygon class="rel" points="515,688 575,729 515,770 455,729"/>
+  <text class="relTxt" x="515" y="729">Classifica</text>
+  <polygon class="rel" points="1105,365 1160,404 1105,443 1050,404"/>
+  <text class="relTxt" x="1105" y="404">Refere</text>
+  <polygon class="rel" points="1585,365 1640,404 1585,443 1530,404"/>
+  <text class="relTxt" x="1585" y="404">Guarda</text>
+  <polygon class="rel" points="1105,1015 1160,1054 1105,1093 1050,1054"/>
+  <text class="relTxt" x="1105" y="1054">Contem</text>
+  <polygon class="rel" points="1585,1015 1640,1054 1585,1093 1530,1054"/>
+  <text class="relTxt" x="1585" y="1054">Possui</text>
+
+  <!-- cardinalidades -->
+  <text class="card" x="360" y="716">1</text>
+  <text class="card" x="735" y="716">1:N</text>
+  <text class="card" x="1010" y="690">1</text>
+  <text class="card" x="1190" y="388">1:N</text>
+  <text class="card" x="2010" y="690">1</text>
+  <text class="card" x="1460" y="388">1:N</text>
+  <text class="card" x="1010" y="768">1</text>
+  <text class="card" x="1185" y="1112">1:N</text>
+  <text class="card" x="2010" y="768">1</text>
+  <text class="card" x="1460" y="1112">1:N</text>
+
+  <!-- atributos categorias -->
+  <ellipse class="attr" cx="235" cy="618" rx="60" ry="23"/><text class="txt pk" x="235" y="618">id</text>
+  <ellipse class="attr" cx="65" cy="729" rx="55" ry="22"/><text class="txt" x="65" y="729">nome</text>
+  <ellipse class="attr" cx="235" cy="847" rx="60" ry="22"/><text class="txt" x="235" y="847">slug</text>
+
+  <!-- atributos produtos -->
+  <ellipse class="attr" cx="812.5" cy="543" rx="52.5" ry="23"/><text class="txt pk" x="812.5" y="543">id</text>
+  <ellipse class="attr" cx="970" cy="542" rx="60" ry="22"/><text class="txt" x="970" y="542">codigo</text>
+  <ellipse class="attr" cx="665" cy="662" rx="80" ry="22"/><text class="txt" x="665" y="662">categoria_id (FK)</text>
+  <ellipse class="attr" cx="655" cy="827" rx="55" ry="22"/><text class="txt" x="655" y="827">nome</text>
+  <ellipse class="attr" cx="865" cy="932" rx="65" ry="22"/><text class="txt" x="865" y="932">descricao</text>
+  <ellipse class="attr" cx="552.5" cy="902" rx="52.5" ry="22"/><text class="txt" x="552.5" y="902">preco</text>
+  <ellipse class="attr" cx="662.5" cy="1002" rx="52.5" ry="22"/><text class="txt" x="662.5" y="1002">stock</text>
+  <ellipse class="attr" cx="562.5" cy="522" rx="57.5" ry="22"/><text class="txt" x="562.5" y="522">imagem</text>
+  <ellipse class="attr" cx="752.5" cy="522" rx="62.5" ry="22"/><text class="txt" x="752.5" y="522">destaque</text>
+  <ellipse class="attr" cx="945" cy="1032" rx="65" ry="22"/><text class="txt" x="945" y="1032">created_at</text>
+
+  <!-- atributos utilizadores -->
+  <ellipse class="attr" cx="2107.5" cy="558" rx="52.5" ry="23"/><text class="txt pk" x="2107.5" y="558">id</text>
+  <ellipse class="attr" cx="1965" cy="587" rx="65" ry="22"/><text class="txt" x="1965" y="587">ip_registo</text>
+  <ellipse class="attr" cx="2265" cy="587" rx="65" ry="22"/><text class="txt" x="2265" y="587">telemovel</text>
+  <ellipse class="attr" cx="2365" cy="597" rx="55" ry="22"/><text class="txt" x="2365" y="597">nome</text>
+  <ellipse class="attr" cx="2400" cy="662" rx="65" ry="22"/><text class="txt" x="2400" y="662">username</text>
+  <ellipse class="attr" cx="2405" cy="777" rx="55" ry="22"/><text class="txt" x="2405" y="777">email</text>
+  <ellipse class="attr" cx="2007.5" cy="917" rx="77.5" ry="22"/><text class="txt" x="2007.5" y="917">password_hash</text>
+  <ellipse class="attr" cx="2152.5" cy="932" rx="52.5" ry="22"/><text class="txt" x="2152.5" y="932">role</text>
+  <ellipse class="attr" cx="2392.5" cy="897" rx="52.5" ry="22"/><text class="txt" x="2392.5" y="897">ativo</text>
+  <ellipse class="attr" cx="2305" cy="1012" rx="65" ry="22"/><text class="txt" x="2305" y="1012">created_at</text>
+
+  <!-- atributos favoritos -->
+  <ellipse class="attr" cx="1237.5" cy="168" rx="52.5" ry="23"/><text class="txt pk" x="1237.5" y="168">id</text>
+  <ellipse class="attr" cx="1430" cy="167" rx="65" ry="22"/><text class="txt" x="1430" y="167">created_at</text>
+  <ellipse class="attr" cx="1105" cy="277" rx="75" ry="22"/><text class="txt" x="1105" y="277">produto_id (FK)</text>
+  <ellipse class="attr" cx="1550" cy="277" rx="85" ry="22"/><text class="txt" x="1550" y="277">utilizador_id (FK)</text>
+
+  <!-- atributos carrinho -->
+  <ellipse class="attr" cx="1317.5" cy="1283" rx="52.5" ry="23"/><text class="txt pk" x="1317.5" y="1283">id</text>
+  <ellipse class="attr" cx="1317.5" cy="1057" rx="72.5" ry="22"/><text class="txt" x="1317.5" y="1057">quantidade</text>
+  <ellipse class="attr" cx="1055" cy="1262" rx="75" ry="22"/><text class="txt" x="1055" y="1262">produto_id (FK)</text>
+  <ellipse class="attr" cx="1585" cy="1262" rx="85" ry="22"/><text class="txt" x="1585" y="1262">utilizador_id (FK)</text>
+  <ellipse class="attr" cx="1125" cy="1377" rx="65" ry="22"/><text class="txt" x="1125" y="1377">created_at</text>
+  <ellipse class="attr" cx="1507.5" cy="1377" rx="67.5" ry="22"/><text class="txt" x="1507.5" y="1377">updated_at</text>
+
+  <!-- atributos logs -->
+  <ellipse class="attr" cx="2247.5" cy="1168" rx="52.5" ry="23"/><text class="txt pk" x="2247.5" y="1168">id</text>
+  <ellipse class="attr" cx="2035" cy="1267" rx="55" ry="22"/><text class="txt" x="2035" y="1267">tabela</text>
+  <ellipse class="attr" cx="2472.5" cy="1267" rx="52.5" ry="22"/><text class="txt" x="2472.5" y="1267">acao</text>
+  <ellipse class="attr" cx="2045" cy="1392" rx="65" ry="22"/><text class="txt" x="2045" y="1392">registo_id</text>
+  <ellipse class="attr" cx="2472.5" cy="1392" rx="57.5" ry="22"/><text class="txt" x="2472.5" y="1392">resumo</text>
+  <ellipse class="attr" cx="2215" cy="1482" rx="60" ry="22"/><text class="txt" x="2215" y="1482">detalhes</text>
+  <ellipse class="attr" cx="2390" cy="1482" rx="65" ry="22"/><text class="txt" x="2390" y="1482">created_at</text>
+</svg>

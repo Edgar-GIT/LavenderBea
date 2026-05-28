@@ -1,0 +1,153 @@
+/*contactos*/
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2.4fr);
+  gap: 30px;
+}
+
+.contact-form {
+  border-radius: 22px;
+  padding: 20px 18px 18px;
+  background: rgba(11, 7, 6, 0.95);
+  border: 1px solid rgba(223, 208, 185, 0.45);
+  box-shadow: var(--shadow-soft);
+}
+
+.contact-meta {
+  border-radius: 22px;
+  padding: 24px 22px 22px;
+  border: 1px solid rgba(223, 208, 185, 0.45);
+  background: radial-gradient(circle at 0 0, rgba(223, 208, 185, 0.18), transparent 60%),rgba(11, 7, 6, 0.97);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: rgba(255, 237, 218, 0.85);
+}
+
+.contact-meta-intro {
+  margin: 0;
+  line-height: 1.7;
+  max-width: 28ch;
+}
+
+.contact-links {
+  display: grid;
+  gap: 14px;
+}
+
+.contact-link {
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr);
+  align-items: center;
+  gap: 14px;
+  padding: 18px 18px 16px;
+  border-radius: 20px;
+  border: 1px solid rgba(223, 208, 185, 0.24);
+  background: rgba(36, 22, 17, 0.78);
+  font-size: 0.9rem;
+  color: rgba(255, 237, 218, 0.9);
+  transition: transform 0.14s ease-out, border-color 0.14s ease-out, background 0.14s ease-out;
+}
+
+.contact-link:hover {
+  transform: translateY(-2px);
+  border-color: rgba(223, 208, 185, 0.64);
+  background: rgba(75, 74, 56, 0.72);
+}
+
+.contact-link-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #f4f8ff;
+  box-shadow: 0 16px 30px rgba(8, 31, 71, 0.32);
+}
+
+.contact-link-icon svg {
+  width: 26px;
+  height: 26px;
+  fill: currentColor;
+}
+
+.contact-link-icon-vinted,.contact-dot-vinted {
+  background: linear-gradient(145deg, #7fd2ff, #4e8cff);
+}
+
+.contact-link-icon-instagram,.contact-dot-instagram {
+  background: linear-gradient(145deg, #7dd0ff, #5a83ff);
+}
+
+.contact-link-icon-mail,.contact-dot-mail {
+  background: linear-gradient(145deg, #8ad9ff, #5b97ff);
+}
+
+.contact-link-icon-vinted span {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.contact-link-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.contact-link-tag {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: rgba(255, 237, 218, 0.7);
+}
+
+.contact-link-main {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: #FFEDDA;
+  word-break: break-word;
+}
+
+.contact-dots {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.contact-dot {
+  width: 54px;
+  height: 54px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFEDDA;
+  box-shadow: 0 16px 28px rgba(8, 31, 71, 0.28);
+  transition: transform 0.14s ease-out, border-color 0.14s ease-out, background 0.14s ease-out;
+}
+
+.contact-dot:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.62);
+}
+
+.contact-dot svg {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+}
+
+.contact-dot span {
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}

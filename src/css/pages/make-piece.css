@@ -1,0 +1,50 @@
+/*make-your-piece*/
+
+.make-piece {
+  border-radius: 28px;
+  padding: 24px 24px 26px;
+  background: radial-gradient(circle at 0 0, rgba(223, 208, 185, 0.22), transparent 70%),rgba(20, 12, 9, 0.96);
+  border: 1px solid rgba(223, 208, 185, 0.6);
+  display: grid;
+  grid-template-columns: minmax(0, 2.8fr) minmax(0, 2.2fr);
+  gap: 28px;
+  align-items: center;
+}
+
+.make-piece-media {
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.9);
+}
+
+.make-piece-text {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-size: 0.9rem;
+  color: rgba(255, 237, 218, 0.85);
+}
+
+.make-piece-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.make-piece-step {
+  border-radius: 18px;
+  padding: 10px 12px;
+  border: 1px dashed rgba(223, 208, 185, 0.5);
+  background: rgba(36, 22, 17, 0.85);
+  font-size: 0.78rem;
+}
+
+.make-piece-step strong {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.72rem;
+  margin-bottom: 4px;
+}
+

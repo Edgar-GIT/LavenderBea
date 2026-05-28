@@ -1,0 +1,125 @@
+/*visual*/
+
+.site-toast-stack {
+  position: fixed;
+  top: 96px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(460px, calc(100% - 24px));
+  display: grid;
+  gap: 10px;
+  z-index: 120;
+}
+
+.site-toast {
+  padding: 16px 18px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(82, 29, 32, 0.98), rgba(36, 22, 17, 0.98));
+  border: 1px solid rgba(255, 237, 218, 0.42);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.65);
+  color: #FFEDDA;
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.site-toast.is-hiding {
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: opacity 0.22s ease, transform 0.22s ease;
+}
+
+.account-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 130;
+}
+
+.account-overlay-backdrop {
+  position: absolute;
+  inset: 0;
+  border: none;
+  background: rgba(0, 0, 0, 0.42);
+}
+
+.account-menu-panel {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  width: min(380px, calc(100% - 24px));
+  border-radius: 26px;
+  padding: 22px 20px 20px;
+  background: rgba(11, 7, 6, 0.98);
+  border: 1px solid rgba(223, 208, 185, 0.48);
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.82);
+}
+
+.account-menu-kicker {
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+}
+
+.account-menu-text {
+  margin: 8px 0 18px;
+  color: rgba(255, 237, 218, 0.68);
+  font-size: 0.84rem;
+}
+
+.account-menu-actions {
+  display: grid;
+  gap: 10px;
+}
+
+.cart-merge-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 135;
+  display: grid;
+  place-items: center;
+  padding: 18px;
+  background: rgba(0, 0, 0, 0.46);
+}
+
+.cart-merge-panel {
+  width: min(430px, 100%);
+  border-radius: 28px;
+  padding: 24px;
+  background:
+    linear-gradient(145deg, rgba(78, 57, 49, 0.98), rgba(28, 18, 15, 0.98));
+  border: 1px solid rgba(223, 208, 185, 0.52);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.78);
+}
+
+.cart-merge-actions {
+  display: grid;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.error-stack {
+  display: grid;
+  gap: 10px;
+  padding-top: 18px;
+}
+
+.compact-error {
+  margin-bottom: 18px;
+}
+
+.page-alert {
+  padding: 14px 16px;
+  border-radius: 18px;
+  border: 1px solid rgba(223, 208, 185, 0.4);
+  background: rgba(11, 7, 6, 0.96);
+  box-shadow: var(--shadow-subtle);
+}
+
+.page-alert-success {
+  border-color: rgba(223, 208, 185, 0.55);
+}
+
+.page-alert-error {
+  border-color: rgba(255, 107, 107, 0.5);
+  background: rgba(64, 18, 22, 0.92);
+}

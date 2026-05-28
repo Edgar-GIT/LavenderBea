@@ -1,0 +1,41 @@
+/*about*/
+
+.about-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.about-row {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2.4fr);
+  gap: 24px;
+  align-items: center;
+}
+
+.about-row-text {
+  font-size: 0.92rem;
+  color: rgba(255, 237, 218, 0.82);
+  line-height: 1.7;
+}
+
+.about-row-text p {
+  margin: 0 0 8px;
+}
+
+.about-row-media {
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.9);
+}
+
+.about-row:nth-child(even) .about-row-media {
+  order: -1;
+}
+
+.about-row-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+

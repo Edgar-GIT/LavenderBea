@@ -1,0 +1,179 @@
+/*detalhes produtos*/
+
+.product-detail {
+  display: grid;
+  grid-template-columns: minmax(0, 2.5fr) minmax(0, 3fr);
+  gap: 32px;
+  padding: 40px 16px 64px;
+}
+
+.product-detail-media {
+  border-radius: 26px;
+  overflow: hidden;
+  box-shadow: 0 26px 70px rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.product-detail-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-detail-panel {
+  border-radius: 26px;
+  padding: 20px 18px 18px;
+  background: rgba(11, 7, 6, 0.96);
+  border: 1px solid rgba(223, 208, 185, 0.5);
+  box-shadow: var(--shadow-soft);
+}
+
+.product-detail-title {
+  font-size: 1.3rem;
+  margin-bottom: 4px;
+}
+
+.product-detail-price {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #FFEDDA;
+}
+
+.product-detail-stock {
+  font-size: 0.8rem;
+  color: rgba(255, 237, 218, 0.7);
+  margin-top: 2px;
+}
+
+.product-detail-description {
+  margin-top: 14px;
+  line-height: 1.72;
+  color: rgba(255, 237, 218, 0.82);
+}
+
+.product-options-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.option-group {
+  border-radius: 18px;
+  padding: 10px 12px;
+  border: 1px solid rgba(223, 208, 185, 0.45);
+  background: rgba(24, 15, 11, 0.95);
+}
+
+.option-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: rgba(255, 237, 218, 0.7);
+  margin-bottom: 6px;
+}
+
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.chip {
+  border-radius: 999px;
+  padding: 4px 10px;
+  border: 1px solid rgba(223, 208, 185, 0.6);
+  font-size: 0.78rem;
+  cursor: pointer;
+  background: rgba(20, 12, 9, 0.9);
+  color: rgba(255, 237, 218, 0.9);
+}
+
+.chip.is-selected {
+  background: linear-gradient(120deg, #9F775B, #D5BCAD);
+  color: #241611;
+}
+
+.quantity-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.quantity-input {
+  width: 64px;
+  text-align: center;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  background: rgba(75, 74, 56, 0.9);
+  border: 1px solid rgba(223, 208, 185, 0.7);
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: #5AD47F;
+}
+
+.status-dot.out {
+  background: #FF6B6B;
+}
+
+.product-detail-actions {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.helper-text {
+  font-size: 0.75rem;
+  color: rgba(255, 237, 218, 0.72);
+}
+
+.helper-text strong {
+  color: #FFEDDA;
+}
+
+.purchase-box {
+  border-radius: 18px;
+  padding: 14px;
+  border: 1px solid rgba(223, 208, 185, 0.35);
+  background: rgba(24, 15, 11, 0.92);
+}
+
+.product-total-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 14px;
+  font-size: 0.95rem;
+}
+
+.product-action-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn-inline-favorite {
+  margin-left: 10px;
+  padding: 6px 12px;
+  font-size: 0.74rem;
+}
+
+.btn-inline-favorite.is-favorite {
+  color: #ff95ab;
+  border-color: rgba(255, 149, 171, 0.75);
+}
