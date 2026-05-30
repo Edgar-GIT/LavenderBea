@@ -23,46 +23,15 @@ function e(null|string|int|float $value): string{
 
 //prefix basing
 function base_url(string $path = ''): string{
-    static $prefix = null;
-
-    if ($prefix === null) {
-        // Use REQUEST_URI to determine the actual request path so that the
-        // prefix is always calculated relative to the real URL, not the
-        // router/script file that PHP happens to be executing.
-        $requestUri = str_replace('\\', '/', $_SERVER['REQUEST_URI'] ?? '/');
-
-        // Strip query string from REQUEST_URI before processing
-        $requestPath = (string) parse_url($requestUri, PHP_URL_PATH);
-        $requestPath = $requestPath !== '' ? $requestPath : '/';
-
-        // The script file gives us the physical entry point (e.g. /router.php
-        // or /index.php). Its directory is the document root of the app.
-        $script = str_replace('\\', '/', $_SERVER['SCRIPT_NAME'] ?? '/index.php');
-        $scriptDir = dirname($script);
-        $scriptDir = str_replace('\\', '/', $scriptDir);
-
-        // Normalise the script directory: '/' means the app is at the root
-        $appBase = ($scriptDir === '/' || $scriptDir === '.') ? '' : rtrim($scriptDir, '/');
-
-        // Remove the app base from the request path to get the route segment,
-        // then subtract that route segment from the full request path to obtain
-        // the prefix (i.e. the part of the URL that precedes the app routes).
-        if ($appBase !== '' && str_starts_with($requestPath, $appBase)) {
-            $prefix = $appBase;
-        } else {
-            // App is at the server root — prefix is always empty, so all
-            // generated URLs start with '/' and are absolute from the root.
-            $prefix = '';
-        }
-    }
-
+    // The app is deployed at the server root (/), so all asset paths are
+    // absolute. No prefix calculation needed — just prepend / to the path.
     $path = ltrim($path, '/');
 
     if ($path === '') {
-        return $prefix . '/';
+        return '/';
     }
 
-    return $prefix . '/' . $path;
+    return '/' . $path;
 }
 
 //montagem de url with query
